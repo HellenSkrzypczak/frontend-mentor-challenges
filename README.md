@@ -12,6 +12,7 @@ Each folder below is a self-contained solution with its own README covering the 
 | [IP Address Tracker](./ip-address-tracker) | HTML, CSS, JavaScript | [link] |
 | [Social Links Profile](./social-links-profile) | HTML, CSS | [link] |
 | [Blog Preview Card](./blog-preview-card) | HTML, CSS | [link](https://hellenskrzypczak.github.io/CARD-PREVIEW-BLOG/) |
+| [QR-Code Component](./qr-code) | HTML, CSS | [link] |
 
 ## About Frontend Mentor
 
