@@ -1,0 +1,11 @@
+# Local config with your private API key — never commit this
+config.js
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+/.vscode
+*.swp
+*.swo

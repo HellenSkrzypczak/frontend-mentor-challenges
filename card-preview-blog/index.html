@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Figtree", sans-serif; }
+    /* Centraliza o conteúdo na viewport, deixando espaço para o rodapé fixo */
+    body { display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 3rem); background-color: hsl(47, 88%, 63%);}
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      position: fixed; 
+      left: 0; 
+      right: 0; 
+      bottom: 0; 
+      width: 100%;
+      padding: 0.5rem 1rem;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .card { 
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      border: 1px solid hsl(0, 0%, 7%);
+      box-shadow: 10px 5px 0px  hsl(0, 0%, 7%);
+      padding: 1rem;
+      border-radius: 1rem;
+      max-width: 20rem;
+      background-color: white;
+    }
+    .card > img {
+      width: 100%;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .category {
+      padding: 0.5rem;
+      background-color: hsl(47, 88%, 63%);
+      max-width: fit-content;
+      border-radius: 0.5rem;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      font-size: 13px;
+    }
+    .card-footer > img {
+      width: 1.5rem;
+    }
+    .small-font {
+      font-size: 14px;
+    }
+    .color-font {
+      color:  hsl(0, 0%, 42%);
+    }
+    .title-action:hover {
+      cursor: pointer;
+      color: hsl(47, 88%, 63%);
+      transition: color 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="images/illustration-article.svg" alt="illustration-article">
+    <div class="content">
+      <p class="category"><strong>Learning</strong></p>
+      <p class="small-font">Published 21 Dec 2023</p>
+      <h3 class="title-action">HTML & CSS foundations</h3>
+      <p class="small-font color-font">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+    <div class="card-footer">
+      <img src="images/image-avatar.webp" alt="Greg Hoover Avatar">
+      <p><strong>Greg Hoover</strong></p>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">SkrHellen</a>.
+  </div>
+</body>
+
+</html>

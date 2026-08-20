@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@200..900&display=swap">
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <header class="header-search">
+      <div>
+        <h1>IP Address Tracker</h1>
+        <div class="header-action">
+          <input id="IPAdress" type="text" placeholder="  Search for any IP address or domain">
+          <button id="bntSearch"><img src="images/icon-arrow.svg" alt="Icon de seta para direita"></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="result-ip-adress">
+      <div class="info">
+        <small>IP ADDRESS</small><br>
+        <p id="resultIP"></p>
+      </div>
+
+      <div class="info border">
+        <small>LOCATION</small><br>
+        <p id="resultLocation"></p>
+      </div>
+
+      <div class="info border">
+        <small>TIMEZONE</small><br>
+        <p id="resultTimezone"></p>
+      </div>
+
+      <div class="info border">
+        <small>ISP</small><br>
+        <p id="resultISP"></p>
+      </div>
+    </div>
+  </div>
+  <div id="map" class="container-map"></div>
+</body>
+</html>
